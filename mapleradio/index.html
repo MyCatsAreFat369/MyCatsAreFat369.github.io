@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Maple Radio</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <section id="textBody" class="boxStyle">
+            <div class="text">
+                <span style="white-space: pre-line">
+                    Welcome to Maple Radio!!
+
+                    Here you will be forced to listen to whatever the host picks!
+
+
+                </span>
+            </div>
+            <span>
+                <label>Username</label>
+                <input id="inputUsername" class="textBox" type="text" value="" />
+            </span>
+            <span>
+                <button class="btn" onClick="getUsername();">Change Name</button>
+            </span>
+        </section>
+        <section id="video" class="boxSpace">
+            <span class="inlineElement">
+                <video width="800" height="450">
+                    <source src="playlists/touhou bossa nova/1.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+            </span>
+            <span class="inlineElement">
+                <header>Users currently tuning in</header>
+                <ul class="listElement">
+                </ul>
+            </span>
+        </section>
+        <script src="username.js"></script>
+    </body>
+</html>
